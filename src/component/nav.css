@@ -1,0 +1,157 @@
+nav {
+  position: fixed;
+  box-sizing: border-box !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: fit-content; */
+  padding: 0.1em !important;
+}
+
+.nav-translucent {
+  background: var(--color-dark-translucent);
+}
+.nav-opaque {
+  background: var(--color-dark-opaque);
+}
+
+.nav--wrapper {
+  display: flex;
+  align-items: center;
+  font-family: "Segoe-Regular";
+  justify-self: start;
+  column-gap: 1em;
+  overflow: hidden;
+}
+
+.nav--wrapper > img {
+  /* width: clamp(2rem, 1rem + 20vw, 15rem); */
+  width: calc(12rem + 5vw);
+  object-fit: cover;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  font-family: "Segoe-Regular";
+  row-gap: 1em;
+}
+
+.tab-nav--wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-self: start;
+  font-family: "Segoe-Regular";
+  column-gap: 1em;
+  /* justify-items: center; */
+  /* border: 1px solid blue; */
+}
+
+#claim_phone {
+  display: none;
+}
+
+#claim {
+  width: 400%;
+  text-align: left;
+}
+
+#claim_label {
+  background-color: white;
+  color: black;
+  padding: 5px 16px;
+  border-radius: 20px;
+}
+
+.menu-item a,
+.tab-nav--wrapper a {
+  color: var(--color-primary);
+  font-size: calc(0.6rem + 1vw);
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu-item a:hover,
+.tab-nav--wrapper a:hover {
+  color: var(--color-secondary);
+}
+.active {
+  color: var(--color-secondary);
+}
+.inactive {
+  color: var(--color-primary);
+}
+
+.burger-wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.1em 1em;
+  visibility: hidden;
+  /* border: 1px solid blue; */
+}
+
+.menu-container {
+  /* position: absolute; */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  /* border: 5px solid orange; */
+  visibility: hidden;
+}
+
+/* Mobile*/
+@media screen and (max-width: 480px) and (max-height: 920px) {
+  .nav--wrapper > img {
+    width: calc(8rem + 5vw);
+  }
+
+  #claim {
+    width: 100%;
+    display: none;
+  }
+
+  #claim_label_phone {
+    background: white;
+    color: black;
+    font-size: 11px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+
+  #claim_phone {
+    width: 500%;
+    display: block;
+    text-decoration: none;
+  }
+
+  .menu-item {
+    width: 40%;
+    height: fit-content;
+    flex-direction: column;
+    row-gap: 0.2em;
+    align-items: flex-start;
+    font-family: "Segoe-Regular";
+    padding: 1em;
+    transition: var(--transition);
+    background-color: var(--color-dark-opaque);
+    /* cursor: pointer; */
+    /* border: 2px solid green; */
+  }
+
+  .tab-nav--wrapper {
+    display: none;
+  }
+
+  .burger-wrapper {
+    visibility: visible;
+  }
+}

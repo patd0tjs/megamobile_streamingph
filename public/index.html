@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="StreamingPH" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>StreamingPH</title>
+  </head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-L0S35R4MMP"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-L0S35R4MMP");
+  </script>
+  <body>
+    <div id="root"></div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="pop"
+      tabindex="-1"
+      aria-labelledby="popLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content"
+          style="background-color: rgba(0, 0, 0, 0.0001)"
+        >
+          <div class="modal-body">
+            <button
+              style="background-color: white; float: right; margin-bottom: 10px"
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <img
+              src="./ad.jpg"
+              class="img-fluid"
+              role="button"
+              onclick="window.open('https://grab.onelink.me/2695613898?pid=inappsharing&c=2-C4BHJKWWMEBAN6&is_retargeting=true&af_dp=grab%3A%2F%2Fopen%3FscreenType%3DGRABMART%26sourceID%3DA4pcqCZkS4%26merchantIDs%3D2-C4BHJKWWMEBAN6&af_force_deeplink=true&af_web_dp=https%3A%2F%2Fwww.grab.com%2Fdownload')"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="mechs"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="mechsLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div
+          class="modal-content"
+          style="background-color: rgba(0, 0, 0, 0.0001)"
+        >
+          <div class="modal-body">
+            <button
+              style="background-color: white; float: right; margin-bottom: 10px"
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <br />
+            <img src="./mech_2.jpg" style="width: 100%" />
+            <img src="./mech_1.jpg" style="width: 100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    window.onload = () => {
+      $("#pop").modal("show");
+    };
+  </script>
+</html>

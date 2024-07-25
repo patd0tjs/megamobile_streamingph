@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Segoe-Bold";
+  src: url(../src/fonts/Segoe-UI-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Segoe-Bold-Italic";
+  src: url(../src/fonts/Segoe-UI-Bold-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Segoe-Regular";
+  src: url(../src/fonts/Segoe-UI.ttf);
+}
+@font-face {
+  font-family: "Segoe-Italic";
+  src: url(../src/fonts/Segoe-UI-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Bebas-Regular";
+  src: url(../src/fonts/BebasNeue-Regular.ttf);
+}
+
+* {
+  outline: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --color-primary: hsl(0, 0%, 85%);
+  --color-primary-variant: hsl(0, 0%, 100%);
+  --color-secondary: hsl(174, 53%, 50%);
+  --color-secondary-variant: hsl(174, 53%, 60%);
+  --color-tertiary: #d575b4;
+  --color-dark-translucent: rgba(28, 28, 28, 0.8);
+  --color-dark-opaque: rgba(28, 28, 28, 1);
+  --color-viu-redpink: #f81251;
+  --color-viu-yellow: #f5b91a;
+  --color-viva-yellow: #f99300;
+  --color-viva-darkblue: #004070;
+  --color-tapgo-blue: #002f4c;
+  --color-tapgo-yellow: #ffa300;
+  --color-cignal-red: #ef182e;
+  --color-blue: #0e43ee;
+  --color-sky-blue: #00bbfb;
+  --color-pink: #d575b4;
+  --color-input-border: rgb(190, 186, 186);
+  --color-disable: #dddddd;
+  --color-disable2: #ada5a5;
+  --color-container-border: rgba(0, 0, 0, 0.01);
+
+  --nav-height: 4rem;
+  /* --cta-back-height: 1.5rem; */
+  --cta-back-width: 1.2rem;
+  --body-margin-left: 1rem;
+  --checkout-image-height: 2rem;
+  --form-input-height: 1.5rem;
+
+  --card-item_subs: 12rem;
+  --card-item-plans: 14rem;
+  --card-item-autofit-plans: 13rem;
+  --card-item-autofit-plans-tapgo: 17rem;
+  --card-item-autofit-plans-vivamax: 15rem;
+
+  --font-size-duration: 1.8rem;
+  --font-size-type: 1.5rem;
+  --font-size-description: 0.7rem;
+  --font-size-description-subscribe: 0.75rem;
+  --font-size-button: 0.85rem;
+  --font-size-section-title: calc(0.8rem + 1vw);
+  --font-size-section-subtitle: calc(0.7rem + 1vw);
+  --font-size-section-text: calc(0.5rem + 1vw);
+  --font-size-small-text: calc(0.3rem + 1vw);
+
+  --transition: all 400ms ease;
+  --container-width-lg: 75;
+  --container-width-md: 85;
+  --container-width-sm: 90;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+/* hide scrollbar in CHROME */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  color: var(--color-primary);
+  height: 100%;
+  overflow: scroll;
+  background: url("https://streamingph.com/sph/assets/bg.jpg") no-repeat
+    center/cover;
+  background-attachment: fixed;
+  font-family: "Courier New", Courier, monospace;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.container-checkout {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - var(--nav-height));
+  top: var(--nav-height);
+  background-color: var(--color-translucent);
+  background: url("./assets/bg_r.png") no-repeat center/cover;
+  overflow: hidden;
+  border: 1px solid red;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.font-primary-bold {
+  font-family: "Segoe-Bold";
+}
+
+.font-primary-regular {
+  font-family: "Segoe-Regular";
+}
+
+.font-primary-italic {
+  font-family: "Segoe-Italic";
+}
+
+.font-secondary-regular {
+  font-family: "Bebas-Regular";
+}
+
+.cta-back {
+  display: inline-block;
+  font-family: "Segoe-Bold";
+  word-wrap: break-word;
+  color: var(--color-primary-variant);
+  font-size: calc(0.5rem + 1vw);
+  margin-left: 1em !important;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0.5em 0;
+}
+
+.btn-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-custom {
+  width: 100%;
+  display: inline-block;
+  border: none;
+  border-radius: 1em;
+  padding: 0.5em 2em !important;
+  font-family: "Segoe-Regular";
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
